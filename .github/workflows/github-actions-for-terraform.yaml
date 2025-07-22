@@ -18,7 +18,8 @@ jobs:
   
     - name: Set up SSH Private Key
       run: |
-        echo "" > /home/ubuntu/.ssh/authorized_keys
+        hostname -i
+      # echo "" > /home/ubuntu/.ssh/authorized_keys
       # env:
       #   TF_VAR_ssh_private_key_path: ~/.ssh/bastion_instance_private_key.pem  # Pass the path to Terraform (this is self-hosted runner machine path)
 
